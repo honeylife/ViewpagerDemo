@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by zhangzhongqi on 16/10/31.
+ * Created by zzq on 16/10/31.
  *
  * @param:
  * @param:
