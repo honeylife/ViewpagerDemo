@@ -3,8 +3,9 @@
   # 一、App启动时欢迎页的倒计时
   
    主要的实现思路：
-    Handler机制，发送消息，自己处理消息更新UI。
+    Handler机制，发送消息，自己处理消息更新UI。<br/>
     ```java
+    
       @Override
     public void run() {
         try {
@@ -18,7 +19,7 @@
         }
     }
    ```
-   而在Handler的handleMessage()方法中处理UI的数据显示，而布局文件比较简单就帖代码了。
+   而在Handler的handleMessage()方法中处理UI的数据显示，而布局文件比较简单就帖代码了。<br/>
    ```java
    private Handler handler = new Handler() {
         @Override
@@ -38,10 +39,10 @@
         }
     };
    ```
-  # 二、轮播图的实现
-  采用Handler机制实现没个3秒换图，发送消息
-  初始化小圆点的关键代码：
-  采用Handler机制实现没个3秒换图，发送消息
+  # 二、轮播图的实现<br/>
+  采用Handler机制实现没个3秒换图，发送消息<br/>
+  初始化小圆点的关键代码：<br/>
+  采用Handler机制实现没个3秒换图，发送消息<br/>
   ```java
   // 初始化图片资源
         imageList = new ArrayList<ImageView>();
