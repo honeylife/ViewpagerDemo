@@ -4,9 +4,8 @@
   
    主要的实现思路：<br/>
     Handler机制，发送消息，自己处理消息更新UI。<br/>
-    
     ```java
-      @Override
+    @Override
     public void run() {
         try {
             while (flag) {
@@ -20,7 +19,7 @@
     }
    ```
    
-   而在Handler的handleMessage()方法中处理UI的数据显示，而布局文件比较简单就帖代码了。<br/>
+ 而在Handler的handleMessage()方法中处理UI的数据显示，而布局文件比较简单就帖代码了。<br/>
    
    ```java
    private Handler handler = new Handler() {
@@ -44,7 +43,6 @@
   # 二、轮播图的实现<br/>
   采用Handler机制实现没个3秒换图，发送消息<br/>
   初始化小圆点的关键代码：<br/>
-  采用Handler机制实现没个3秒换图，发送消息<br/>
   ```java
   // 初始化图片资源
         imageList = new ArrayList<ImageView>();
@@ -73,7 +71,7 @@
             point_group.addView(point);
         }
   ```
-  而 设置当前viewPager的位置
+  而设置当前viewPager的位置
   ```java
         viewPager.setCurrentItem(Integer.MAX_VALUE / 2
                 - (Integer.MAX_VALUE / 2 % imageList.size()));
