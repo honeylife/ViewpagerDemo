@@ -5,7 +5,6 @@
    主要的实现思路：<br/>
     Handler机制，发送消息，自己处理消息更新UI。<br/>
     ```java
-    @Override
     public void run() {
         try {
             while (flag) {
