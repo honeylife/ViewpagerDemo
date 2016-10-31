@@ -4,7 +4,7 @@
   
    主要的实现思路：<br/>
     Handler机制，发送消息，自己处理消息更新UI.
-    ```java
+  
     
     public void run() {
         try {
@@ -17,7 +17,7 @@
             e.printStackTrace();
         }
     }
-   ```
+   
    
  --而在Handler的handleMessage()方法中处理UI的数据显示，而布局文件比较简单就帖代码了。<br/>
    
@@ -40,7 +40,7 @@
         }
     };
    ```
-  # 二、轮播图的实现<br/>
+  ## 二、轮播图的实现<br/>
   采用Handler机制实现没个3秒换图，发送消息<br/>
   初始化小圆点的关键代码：<br/>
   ```java
