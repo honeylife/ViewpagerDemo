@@ -1,10 +1,11 @@
 # ViewpagerDemo项目简介
 
-  # 一、App启动时欢迎页的倒计时
+  ## 一、App启动时欢迎页的倒计时
   
    主要的实现思路：<br/>
-    Handler机制，发送消息，自己处理消息更新UI。<br/>
+    Handler机制，发送消息，自己处理消息更新UI.
     ```java
+    
     public void run() {
         try {
             while (flag) {
@@ -18,7 +19,7 @@
     }
    ```
    
- 而在Handler的handleMessage()方法中处理UI的数据显示，而布局文件比较简单就帖代码了。<br/>
+ --而在Handler的handleMessage()方法中处理UI的数据显示，而布局文件比较简单就帖代码了。<br/>
    
    ```java
    private Handler handler = new Handler() {
